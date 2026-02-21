@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,13 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyUI theme -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- outfit font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,6 +46,34 @@
     <link rel="icon" href="./assets/logo.png" type="" />
   </head>
   <body class="min-h-screen max-w-md mx-auto bg-base-200">
-    <h1 class="text-primary">Hello world!</h1>
+    <div class="logo w-[263px] mx-auto pt-52 pb-8">
+      <img src="./assets/Logo-full.png" alt="" />
+    </div>
+    <div class="form">
+      <div class="card bg-base-100 w-full max-w-[402px] shrink-0 mx-auto rounded-3xl">
+        <div class="card-body space-y-4 p-8">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Mobile Number</label>
+            <input id="phn-no"
+              maxlength="11"
+              minlength="11"
+              type="text"
+              class="input bg-base-200 rounded-full"
+              placeholder="Enter Your Number"
+            />
+            <label class="label text-neutral font-bold">4 Digit Pin</label>
+            <input id="pin-no"
+              maxlength="4"
+              minlength="4"
+              type="password"
+              class="input bg-base-200 rounded-full"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <script src="./script/login.js"></script>
   </body>
 </html>
